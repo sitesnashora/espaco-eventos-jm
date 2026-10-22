@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Espaço de Eventos JM · Montes Claros</title>
+<meta name="description" content="Espaço de Eventos JM — salão com piscina iluminada no Santa Rafaela, Montes Claros. Veja as datas livres e peça seu orçamento pelo site.">
+<meta name="theme-color" content="#1f2328">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://images.unsplash.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f4efe7;--paper:#fffdf9;--ink:#1f2328;--mut:#6b6760;--line:rgba(31,35,40,.12);--gold:#b8893e;--blue:#2b4fd8;--blue2:#1b36a8;--green:#1f9d55;--warm:#f2b35b;
+--fh:'Cormorant Garamond',Georgia,serif;--fb:'Outfit',system-ui,sans-serif;--ease:cubic-bezier(.2,.7,.1,1)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font:400 16px/1.6 var(--fb);overflow-x:clip;-webkit-font-smoothing:antialiased}
+body.lock{overflow:hidden}
+img{display:block;max-width:100%}a{color:inherit;text-decoration:none}
+button,input,select,textarea{font:inherit;color:inherit}
+button{cursor:pointer}
+[hidden]{display:none!important}
+.wrap{width:min(1120px,100% - 32px);margin-inline:auto}
+h1,h2,h3{font-family:var(--fh);font-weight:600;line-height:1.02;letter-spacing:-.01em}
+h2{font-size:clamp(2.3rem,5.4vw,3.6rem)}
+h2 em{font-style:italic;color:var(--gold)}
+.kick{font-size:.74rem;font-weight:600;letter-spacing:.24em;text-transform:uppercase;color:var(--gold)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:14px 22px;border-radius:999px;background:var(--ink);color:#fff;font-weight:600;border:0;transition:transform .15s,background .2s}
+.btn:active{transform:scale(.97)}
+.btn.bl{background:var(--blue)}.btn.bl:hover{background:var(--blue2)}
+.btn.ln{background:transparent;color:inherit;border:1.5px solid currentColor}
+.demo-bar{background:var(--ink);color:#d9d4cb;font-size:.72rem;text-align:center;padding:5px 12px;letter-spacing:.02em}
+.rv{opacity:0;transform:translateY(16px);transition:opacity .7s var(--ease),transform .7s var(--ease)}.rv.in{opacity:1;transform:none}
+header{position:sticky;top:0;z-index:50;background:rgba(244,239,231,.9);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:64px;gap:10px}
+.logo{display:flex;align-items:center;gap:10px;min-width:0}
+.mono{font-family:var(--fh);font-weight:700;font-size:1.7rem;line-height:1;width:44px;height:44px;flex:0 0 44px;display:grid;place-items:center;border:1.5px solid var(--ink);border-radius:4px;letter-spacing:-.04em}
+.logo b{display:block;font-size:.95rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;white-space:nowrap}
+.logo small{display:block;font-size:.7rem;color:var(--mut);letter-spacing:.06em}
+.nav .btn{padding:10px 16px;font-size:.9rem}
+.myres{display:none;border:1.5px solid var(--blue);color:var(--blue);background:none;border-radius:999px;padding:9px 14px;font-weight:600;font-size:.86rem;white-space:nowrap}
+.myres.on{display:inline-flex}
+@media(max-width:520px){.logo small{display:none}.nav .btn.top{display:none}.logo b{font-size:.76rem;letter-spacing:.08em}.myres{padding:7px 11px;font-size:.8rem}}
+/* hero */
+.hero{position:relative;color:#fff;background:#0d1020;overflow:hidden}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.78}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(13,16,32,.15),rgba(13,16,32,.35) 45%,rgba(13,16,32,.9))}
+.hero .wrap{position:relative;z-index:1;min-height:min(86svh,740px);display:flex;flex-direction:column;justify-content:flex-end;padding:120px 0 52px}
+.hero h1{font-size:clamp(3rem,9vw,6.6rem);max-width:12ch;margin:10px 0 16px}
+.hero h1 em{color:var(--warm)}
+.hero p{max-width:44ch;color:#e6e3f0;font-size:1.08rem;margin-bottom:24px}
+.hero .ctas{display:flex;gap:10px;flex-wrap:wrap}
+.hero .btn.ln{color:#fff}
+.hero .kick{color:var(--warm)}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:26px}
+.chips span{border:1px solid rgba(255,255,255,.35);border-radius:999px;padding:6px 12px;font-size:.84rem;backdrop-filter:blur(4px)}
+/* espaço */
+.sec{padding:clamp(64px,9vw,104px) 0}
+.feat{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:18px;overflow:hidden;margin-top:30px}
+.feat div{background:var(--paper);padding:22px}
+.feat i{font-style:normal;font-size:1.5rem}
+.feat h3{font-size:1.5rem;margin:10px 0 4px}
+.feat p{color:var(--mut);font-size:.92rem}
+@media(max-width:860px){.feat{grid-template-columns:1fr 1fr}}
+@media(max-width:480px){.feat{grid-template-columns:1fr}}
+.types{display:grid;grid-template-columns:1.2fr 1fr 1fr;grid-template-rows:220px 220px;gap:12px;margin-top:30px}
+.types figure{position:relative;border-radius:16px;overflow:hidden;background:#ddd}
+.types figure:first-child{grid-row:1/3}
+.types img{width:100%;height:100%;object-fit:cover;transition:transform .6s var(--ease)}
+.types figure:hover img{transform:scale(1.04)}
+.types figcaption{position:absolute;left:14px;bottom:12px;color:#fff;font-family:var(--fh);font-size:1.6rem;font-weight:600;text-shadow:0 2px 12px rgba(0,0,0,.6)}
+.types figure::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(0,0,0,.55),transparent 50%)}
+.types figcaption{z-index:1}
+.ilus{font-size:.78rem;color:var(--mut);margin-top:10px}
+@media(max-width:760px){.types{grid-template-columns:1fr 1fr;grid-template-rows:200px 150px 150px}.types figure:first-child{grid-column:1/3;grid-row:auto}}
+/* agenda */
+.agenda{background:var(--paper);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.ag{display:grid;grid-template-columns:1.05fr .95fr;gap:28px;margin-top:28px;align-items:start}
+@media(max-width:900px){.ag{grid-template-columns:1fr}}
+.cal{border:1px solid var(--line);border-radius:18px;padding:16px;background:#fff;min-width:0}
+.cal-h{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px}
+.cal-h b{font-family:var(--fh);font-size:1.7rem;font-weight:600}
+.cal-h button{width:40px;height:40px;border-radius:50%;border:1px solid var(--line);background:none;font-size:1.1rem}
+.cal-h button:disabled{opacity:.3;cursor:default}
+.dw,.days{display:grid;grid-template-columns:repeat(7,1fr);gap:4px}
+.dw span{text-align:center;font-size:.7rem;font-weight:600;letter-spacing:.08em;color:var(--mut);padding:4px 0}
+.days button{aspect-ratio:1;border-radius:10px;border:1px solid transparent;background:#f1f6ff;font-weight:600;font-size:.95rem;position:relative;min-width:0;padding:0}
+.days button.livre{background:#eaf0ff;color:var(--blue2)}
+.days button.livre:hover{border-color:var(--blue)}
+.days button.pre{background:#fff3df;color:#9a5b00}
+.days button.res{background:#efece7;color:#b0aaa1;text-decoration:line-through;cursor:not-allowed}
+.days button.past,.days button.pad{background:none;color:#cfcac2;cursor:default}
+.days button.pad{visibility:hidden}
+.days button.sel{background:var(--blue);color:#fff;border-color:var(--blue)}
+.days button.wk:not(.res):not(.past)::after{content:"";position:absolute;bottom:6px;left:50%;width:4px;height:4px;margin-left:-2px;border-radius:50%;background:currentColor;opacity:.5}
+.legend{display:flex;gap:14px;flex-wrap:wrap;margin-top:12px;font-size:.8rem;color:var(--mut)}
+.legend i{display:inline-block;width:12px;height:12px;border-radius:4px;vertical-align:-1px;margin-right:5px}
+.form{border:1px solid var(--line);border-radius:18px;padding:20px;background:#fff;min-width:0}
+.form h3{font-size:1.9rem}
+.form .when{color:var(--blue2);font-weight:600;margin:4px 0 14px}
+.form .empty{color:var(--mut)}
+.f{display:grid;gap:12px}
+.f label{display:grid;gap:5px;font-size:.84rem;font-weight:600}
+.f input,.f select,.f textarea{width:100%;border:1.5px solid var(--line);border-radius:12px;padding:12px;background:#fbfaf7;outline:none;font-weight:500}
+.f input:focus,.f select:focus,.f textarea:focus{border-color:var(--blue)}
+.seg{display:flex;gap:6px;flex-wrap:wrap}
+.seg label{display:block}
+.seg input{position:absolute;opacity:0;pointer-events:none}
+.seg span{display:block;padding:10px 14px;border-radius:12px;border:1.5px solid var(--line);font-weight:600;font-size:.9rem;cursor:pointer;background:#fbfaf7}
+.seg input:checked+span{background:var(--ink);color:#fff;border-color:var(--ink)}
+.range{display:flex;align-items:center;gap:12px}
+.range input{flex:1;accent-color:var(--blue);padding:0;border:0;background:none}
+.range b{min-width:64px;text-align:right;font-size:1.1rem}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:480px){.row2{grid-template-columns:1fr}}
+.err{color:#c0392b;font-size:.86rem;font-weight:600;min-height:1.2em}
+.note{font-size:.78rem;color:var(--mut)}
+/* status da reserva */
+.steps{list-style:none;display:grid;gap:8px;margin:16px 0}
+.steps li{display:flex;gap:12px;align-items:flex-start;padding:12px;border-radius:12px;border:1px solid var(--line);background:#fbfaf7;opacity:.45}
+.steps li.on{opacity:1}
+.steps li.cur{border-color:var(--blue);box-shadow:0 0 0 3px rgba(43,79,216,.12);opacity:1;background:#fff}
+.steps li i{flex:0 0 28px;height:28px;border-radius:50%;display:grid;place-items:center;background:#ddd;color:#fff;font-style:normal;font-weight:700;font-size:.85rem}
+.steps li.on i{background:var(--green)}
+.steps li b{display:block}.steps li small{color:var(--mut)}
+.code{display:inline-block;padding:4px 12px;border-radius:8px;background:var(--ink);color:#fff;font-weight:700;letter-spacing:.08em}
+.hint{margin-top:12px;padding:12px 14px;border-radius:12px;border:1px dashed var(--blue);font-size:.88rem}
+.hint a{color:var(--blue);font-weight:700;text-decoration:underline}
+/* painel teaser */
+.pt{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center}
+@media(max-width:860px){.pt{grid-template-columns:1fr}}
+.pt ul{list-style:none;margin-top:18px;display:grid;gap:12px}
+.pt li{display:flex;gap:12px}
+.pt li span{font-size:1.3rem}
+.pt li b{display:block}.pt li p{color:var(--mut);font-size:.92rem}
+.mock{background:#fff;border:1px solid var(--line);border-radius:18px;padding:14px;box-shadow:0 30px 60px -36px rgba(31,35,40,.45);min-width:0}
+.mock .mh{display:flex;justify-content:space-between;font-weight:700;margin-bottom:8px}
+.mock .oc{display:grid;grid-template-columns:1fr auto;gap:2px 10px;padding:10px 12px;border:1px solid var(--line);border-radius:12px;margin-top:8px;font-size:.88rem}
+.mock .oc small{color:var(--mut)}
+.mock em{grid-row:1/3;grid-column:2;align-self:center;font-style:normal;font-size:.68rem;font-weight:700;border-radius:6px;padding:4px 8px;letter-spacing:.04em}
+.s-novo{background:#ffe9d1;color:#9a4b00}.s-orcado{background:#e4e9ff;color:#1b36a8}.s-sinal{background:#fff1c9;color:#7a5a00}.s-confirmado{background:#d8f3e2;color:#16703c}.s-recusado{background:#eee;color:#777}
+/* reviews / contato */
+.rev{display:grid;grid-template-columns:auto 1fr;gap:34px;align-items:center}
+.rev .sc b{font-family:var(--fh);font-size:5.4rem;line-height:.9;display:block}
+.rev .sc span{color:var(--gold);letter-spacing:.1em}
+.rev blockquote{font-family:var(--fh);font-size:clamp(1.6rem,3.6vw,2.3rem);line-height:1.15;font-style:italic}
+.rev cite{display:block;margin-top:10px;font-style:normal;color:var(--mut);font-size:.9rem}
+@media(max-width:640px){.rev{grid-template-columns:1fr;gap:14px}}
+.visit{display:grid;grid-template-columns:1fr 1.2fr;gap:20px}
+.visit .card{background:var(--ink);color:#fff;border-radius:18px;padding:26px}
+.visit .card h3{font-size:2rem}
+.visit .card p{color:#cfcac2;margin-top:8px}
+.visit .card .btn{background:#fff;color:var(--ink)}
+.visit .card .btn.ln{background:none;color:#fff}
+.map{border-radius:18px;overflow:hidden;min-height:300px;background:#ddd}
+.map iframe{width:100%;height:100%;min-height:300px;border:0;display:block}
+@media(max-width:760px){.visit{grid-template-columns:1fr}}
+footer{padding:36px 0 50px;color:var(--mut);font-size:.86rem;border-top:1px solid var(--line)}
+footer b{color:var(--ink);font-family:var(--fh);font-size:1.4rem}
+.toast{position:fixed;left:50%;bottom:20px;transform:translate(-50%,160%);visibility:hidden;z-index:90;background:var(--ink);color:#fff;border-radius:14px;padding:12px 16px;font-weight:600;transition:transform .35s var(--ease),visibility .35s;max-width:calc(100% - 24px)}
+.toast.on{transform:translate(-50%,0);visibility:visible}
+</style>
+</head>
+<body>
+<div class="demo-bar">Site de demonstração · nenhuma reserva é enviada de verdade</div>
+<header><div class="wrap nav">
+ <a href="#topo" class="logo" aria-label="Espaço de Eventos JM"><span class="mono">JM</span><span><b>Espaço de Eventos</b><small>Santa Rafaela · Montes Claros</small></span></a>
+ <div style="display:flex;gap:8px;align-items:center"><button class="myres" id="myres" type="button">Minha reserva</button><a class="btn top" href="#agenda">Ver datas livres</a></div>
+</div></header>
+
+<main id="topo">
+<section class="hero">
+ <img src="https://images.unsplash.com/photo-1764419737670-5e63f20c5493?auto=format&fit=crop&w=1800&h=1100&q=72" alt="Piscina iluminada à noite">
+ <div class="wrap">
+  <span class="kick">Salão de festas com piscina · Montes Claros</span>
+  <h1>Sua festa com a <em>piscina acesa.</em></h1>
+  <p>Salão coberto, área da piscina iluminada e espaço amplo no Santa Rafaela. Veja agora quais datas estão livres e peça seu orçamento sem precisar esperar resposta.</p>
+  <div class="ctas"><a class="btn bl" href="#agenda">Ver datas livres</a><a class="btn ln" href="#espaco">Conhecer o espaço</a></div>
+  <div class="chips"><span>★ 5,0 no Google</span><span>Aniversários</span><span>Casamentos</span><span>Confraternizações</span></div>
+ </div>
+</section>
+
+<section class="sec" id="espaco">
+ <div class="wrap">
+  <span class="kick">O espaço</span>
+  <h2>Tudo num lugar só, <em>pronto pra festa.</em></h2>
+  <div class="feat rv">
+   <div><i>💧</i><h3>Piscina iluminada</h3><p>Luz azul e cascatas: à noite vira o cenário da festa.</p></div>
+   <div><i>🏛️</i><h3>Salão coberto</h3><p>Área ampla com mesas e cadeiras, piso claro e iluminação nas paredes.</p></div>
+   <div><i>✨</i><h3>Ambiente aconchegante</h3><p>Luz indireta e espaço pra montar a decoração do seu jeito.</p></div>
+   <div><i>📍</i><h3>Fácil de chegar</h3><p>Rua Frei Damião, no Santa Rafaela.</p></div>
+  </div>
+  <div class="types rv">
+   <figure><img src="https://images.unsplash.com/photo-1741969494307-55394e3e4071?auto=format&fit=crop&w=900&h=900&q=70" alt="Mesa de aniversário com balões" loading="lazy"><figcaption>Aniversários</figcaption></figure>
+   <figure><img src="https://images.unsplash.com/photo-1677768061409-3d4fbd0250d1?auto=format&fit=crop&w=700&h=500&q=70" alt="Mesa posta para casamento" loading="lazy"><figcaption>Casamentos</figcaption></figure>
+   <figure><img src="https://images.unsplash.com/photo-1642371591966-4112c0b0f378?auto=format&fit=crop&w=700&h=500&q=70" alt="Piscina à noite" loading="lazy"><figcaption>Pool party</figcaption></figure>
+   <figure><img src="https://images.unsplash.com/photo-1604668915840-580c30026e5f?auto=format&fit=crop&w=700&h=500&q=70" alt="Balões" loading="lazy"><figcaption>Chá revelação</figcaption></figure>
+   <figure><img src="https://images.unsplash.com/photo-1723832348105-2e69f948135a?auto=format&fit=crop&w=700&h=500&q=70" alt="Salão com luzes" loading="lazy"><figcaption>Confraternizações</figcaption></figure>
+  </div>
+  <p class="ilus">Fotos ilustrativas. No site de vocês entram as fotos do espaço.</p>
+ </div>
+</section>
+
+<section class="sec agenda" id="agenda">
+ <div class="wrap">
+  <span class="kick">Agenda</span>
+  <h2>Escolha a <em>data da festa.</em></h2>
+  <p style="color:var(--mut);margin-top:8px;max-width:56ch">Os dias em azul estão livres. Toque no dia, conte como vai ser a festa e o orçamento chega por aqui e no seu WhatsApp.</p>
+  <div class="ag">
+   <div class="cal rv">
+    <div class="cal-h"><button type="button" id="prevM" aria-label="Mês anterior">←</button><b id="mName"></b><button type="button" id="nextM" aria-label="Próximo mês">→</button></div>
+    <div class="dw"><span>D</span><span>S</span><span>T</span><span>Q</span><span>Q</span><span>S</span><span>S</span></div>
+    <div class="days" id="days"></div>
+    <div class="legend"><span><i style="background:#eaf0ff;border:1px solid #b9c7ff"></i>Livre</span><span><i style="background:#fff3df;border:1px solid #f1cf94"></i>Em negociação</span><span><i style="background:#efece7"></i>Reservado</span></div>
+   </div>
+   <div class="form rv" id="formBox">
+    <h3>Pedir orçamento</h3>
+    <p class="empty" id="pick">← Escolha um dia livre no calendário.</p>
+    <form class="f" id="f" novalidate hidden>
+     <div class="when" id="when"></div>
+     <div><label style="margin-bottom:6px">Turno</label><div class="seg"><label><input type="radio" name="turno" value="Dia" checked><span>☀️ Dia</span></label><label><input type="radio" name="turno" value="Noite"><span>🌙 Noite</span></label></div></div>
+     <label>Tipo de festa<select name="tipo"><option>Aniversário</option><option>Casamento</option><option>15 anos</option><option>Chá revelação / chá de bebê</option><option>Confraternização</option><option>Pool party</option><option>Outro</option></select></label>
+     <label>Quantos convidados?<div class="range"><input type="range" name="conv" min="20" max="200" step="10" value="80" aria-label="Convidados"><b id="convV">80</b></div></label>
+     <div class="row2"><label>Seu nome<input name="nome" autocomplete="name" placeholder="Como te chamo?"></label><label>WhatsApp<input name="tel" inputmode="tel" autocomplete="tel" placeholder="(38) 9 0000-0000"></label></div>
+     <label>Alguma observação? <span class="note">(opcional)</span><textarea name="obs" rows="2" maxlength="200" placeholder="Ex.: vou levar buffet próprio, preciso de mais mesas…"></textarea></label>
+     <p class="err" id="err"></p>
+     <button class="btn bl" type="submit">Pedir orçamento</button>
+     <p class="note">Demonstração: o pedido fica só neste navegador.</p>
+    </form>
+    <div id="status" hidden></div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="sec">
+ <div class="wrap pt">
+  <div class="rv">
+   <span class="kick">Pra quem cuida do espaço</span>
+   <h2>A agenda num <em>painel só.</em></h2>
+   <p style="color:var(--mut);margin-top:10px;max-width:46ch">Cada pedido de orçamento chega no painel com data, turno, tipo de festa e quantidade de convidados. Nada de data marcada em dois lugares.</p>
+   <ul>
+    <li><span>📅</span><div><b>Agenda sempre certa</b><p>Data com sinal pago some do site sozinha. Bloqueia dias pelo celular.</p></div></li>
+    <li><span>💬</span><div><b>Orçamento em um toque</b><p>Coloca o valor, o cliente vê no site e recebe no WhatsApp.</p></div></li>
+    <li><span>💰</span><div><b>Sinal e confirmação</b><p>Marca o sinal recebido e confirma. Sabe quanto tem pra receber no mês.</p></div></li>
+   </ul>
+   <a class="btn" href="painel.html" target="_blank" rel="noopener" style="margin-top:22px">Abrir o painel (demonstração)</a>
+  </div>
+  <div class="mock rv" aria-hidden="true">
+   <div class="mh"><span>Pedidos de orçamento</span><span style="color:var(--mut);font-weight:500">Novembro</span></div>
+   <div class="oc"><b>Sáb 14/11 · Noite</b><small>Aniversário · 120 convidados</small><em class="s-novo">NOVO</em></div>
+   <div class="oc"><b>Dom 22/11 · Dia</b><small>Chá revelação · 60 convidados</small><em class="s-orcado">ORÇADO</em></div>
+   <div class="oc"><b>Sáb 28/11 · Noite</b><small>Casamento · 180 convidados</small><em class="s-sinal">SINAL PAGO</em></div>
+   <div class="oc"><b>Sex 06/11 · Noite</b><small>Confraternização · 90 convidados</small><em class="s-confirmado">CONFIRMADO</em></div>
+  </div>
+ </div>
+</section>
+
+<section class="sec" style="padding-top:0">
+ <div class="wrap rev rv">
+  <div class="sc"><b>5,0</b><span>★★★★★</span><br><small style="color:var(--mut)">8 avaliações no Google</small></div>
+  <div><blockquote>“O espaço é incrível, lugar aconchegante, espaço bem amplo, fácil localização… recomendo demais fazer o seu evento neste espaço.”</blockquote><cite>Lucas Gabriel · Google</cite><p style="margin-top:12px;color:var(--mut)">“Ambiente muito top.” — Fernando Alves Antunes &nbsp;·&nbsp; “Lugar bom para festas 🥳” — Dayane Ribeiro</p></div>
+ </div>
+</section>
+
+<section class="sec" style="padding-top:0" id="contato">
+ <div class="wrap visit">
+  <div class="card rv"><span class="kick">Visite o espaço</span><h3 style="margin-top:8px">Rua Frei Damião, 279</h3><p>Santa Rafaela · Montes Claros – MG</p><p>(38) 98417-7312</p><div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:20px"><a class="btn" href="https://wa.me/5538984177312" target="_blank" rel="noopener">WhatsApp</a><a class="btn ln" href="https://www.google.com/maps/dir/?api=1&destination=-16.7680002,-43.849986" target="_blank" rel="noopener">Como chegar</a></div></div>
+  <div class="map rv"><iframe title="Mapa do Espaço de Eventos JM" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=-16.7680002,-43.849986&z=16&output=embed"></iframe></div>
+ </div>
+</section>
+</main>
+<footer><div class="wrap"><b>Espaço de Eventos JM</b><p>R. Frei Damião, 279 · Santa Rafaela · Montes Claros – MG · (38) 98417-7312</p><p style="margin-top:6px">Site de demonstração. Fotos ilustrativas.</p></div></footer>
+<div class="toast" id="toast"></div>
+
+<script src="jm.js?v=2"></script>
+<script>
+(()=>{
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)],{K,get,set,esc,brl}=JM;
+const toast=m=>{const t=$('#toast');t.textContent=m;t.classList.add('on');clearTimeout(t._h);t._h=setTimeout(()=>t.classList.remove('on'),2600)};
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{rootMargin:'0px 0px -6% 0px'});$$('.rv').forEach(el=>io.observe(el));
+
+/* calendário */
+const T=JM.today(),[ty,tm]=T.split('-').map(Number);
+let vy=ty,vm=tm-1,sel=null;
+const MAXM=6;
+function drawCal(){const first=new Date(vy,vm,1),n=new Date(vy,vm+1,0).getDate(),pad=first.getDay();
+ $('#mName').textContent=JM.month(vy,vm);
+ let h='';for(let i=0;i<pad;i++)h+='<button class="pad" type="button" tabindex="-1" aria-hidden="true"></button>';
+ for(let d=1;d<=n;d++){const s=vy+'-'+JM.pad(vm+1)+'-'+JM.pad(d),dw=new Date(vy,vm,d).getDay(),past=s<=T;const st=past?'past':JM.dayState(s);
+  h+=`<button type="button" class="${st}${dw===0||dw===6||dw===5?' wk':''}${s===sel?' sel':''}" data-d="${s}" ${st==='past'||st==='res'?'disabled':''} aria-label="${d} ${st==='livre'?'livre':st==='pre'?'em negociação':st==='res'?'reservado':''}">${d}</button>`}
+ $('#days').innerHTML=h;
+ const off=(vy-ty)*12+vm-(tm-1);$('#prevM').disabled=off<=0;$('#nextM').disabled=off>=MAXM}
+$('#prevM').onclick=()=>{vm--;if(vm<0){vm=11;vy--}drawCal()};
+$('#nextM').onclick=()=>{vm++;if(vm>11){vm=0;vy++}drawCal()};
+$('#days').addEventListener('click',e=>{const b=e.target.closest('[data-d]');if(!b||b.disabled)return;sel=b.dataset.d;drawCal();showForm();
+ if(innerWidth<900)setTimeout(()=>$('#formBox').scrollIntoView({behavior:'smooth',block:'start'}),60)});
+
+/* formulário */
+const f=$('#f');
+f.conv.addEventListener('input',()=>$('#convV').textContent=f.conv.value+(f.conv.value==200?'+':''));
+try{const me=get(K.me,{});if(me.nome)f.nome.value=me.nome;if(me.tel)f.tel.value=me.tel}catch(e){}
+function showForm(){$('#status').hidden=true;$('#pick').hidden=true;f.hidden=false;$('#err').textContent='';
+ const pre=JM.dayState(sel)==='pre';$('#when').innerHTML=JM.fmt(sel)+(pre?'<br><small style="color:#9a5b00;text-transform:none;font-weight:500">Já tem alguém negociando esse dia. Você entra como segunda opção.</small>':'')}
+f.addEventListener('submit',e=>{e.preventDefault();const nome=f.nome.value.trim(),tel=f.tel.value.replace(/\D/g,'');
+ if(!sel){$('#err').textContent='Escolha uma data.';return}
+ if(!nome){$('#err').textContent='Coloque seu nome.';f.nome.focus();return}
+ if(tel.length<10){$('#err').textContent='Coloque um WhatsApp com DDD.';f.tel.focus();return}
+ const reqs=get(K.reqs,[]);const r={id:Date.now(),code:'JM'+String(231+reqs.filter(x=>!x.ex).length),at:Date.now(),date:sel,turno:f.turno.value,tipo:f.tipo.value,conv:+f.conv.value,nome,tel,obs:f.obs.value.trim().slice(0,200),status:'novo'};
+ reqs.unshift(r);set(K.reqs,reqs);const mine=get(K.mine,[]);mine.unshift(r.id);set(K.mine,mine.slice(0,10));set(K.me,{nome,tel:f.tel.value.trim()});
+ showStatus(r.id);drawCal();myres();toast('Pedido enviado! Acompanhe aqui.')});
+
+/* acompanhamento */
+let tracking=null;
+function showStatus(id){const r=get(K.reqs,[]).find(x=>x.id===id);if(!r)return;tracking=id;f.hidden=true;$('#pick').hidden=true;const box=$('#status');box.hidden=false;
+ if(r.status==='recusado'){box.innerHTML=`<p><span class="code">${r.code}</span></p><ul class="steps"><li class="cur"><i>!</i><div><b>Data indisponível</b><small>O espaço não pode atender nesse dia. Escolha outra data no calendário.</small></div></li></ul><button class="btn" type="button" id="again">Escolher outra data</button>`;$('#again').onclick=()=>{tracking=null;box.hidden=true;$('#pick').hidden=false;sel=null;drawCal()};return}
+ const order=['novo','orcado','sinal','confirmado'],idx=order.indexOf(r.status);
+ const S=[['Pedido recebido',`${r.tipo} · ${r.conv} convidados · ${r.turno.toLowerCase()}`],['Orçamento',r.valor?`<b style="display:inline;color:var(--blue2)">${brl(r.valor)}</b>${r.sinal?` · sinal de ${brl(r.sinal)} pra garantir a data`:''}`:'O espaço está preparando seu valor'],['Sinal recebido','Data garantida pra você'],['Festa confirmada 🎉','Agora é só aproveitar']];
+ box.innerHTML=`<p style="display:flex;gap:10px;align-items:center;flex-wrap:wrap"><span class="code">${r.code}</span><b>${JM.fmt(r.date)}</b></p>
+ <ul class="steps">${S.map((s,i)=>`<li class="${i<idx?'on':i===idx?'on cur':''}"><i>${i<=idx?'✓':i+1}</i><div><b>${s[0]}</b><small>${s[1]}</small></div></li>`).join('')}</ul>
+ <div class="hint">👀 <b>Teste:</b> abra o <a href="painel.html" target="_blank" rel="noopener">painel do espaço</a> em outra aba, mande um orçamento pro pedido ${r.code} e veja aparecer aqui.</div>
+ <button class="btn ln" type="button" id="newReq" style="margin-top:12px;padding:10px 16px">Pedir outra data</button>`;
+ $('#newReq').onclick=()=>{tracking=null;box.hidden=true;$('#pick').hidden=false;sel=null;drawCal()}}
+function myres(){const m=get(K.mine,[]),r=get(K.reqs,[]).find(x=>x.id===m[0]);$('#myres').classList.toggle('on',!!r)}
+$('#myres').onclick=()=>{const m=get(K.mine,[]);showStatus(m[0]);$('#formBox').scrollIntoView({behavior:'smooth',block:'start'})};
+const refresh=()=>{drawCal();myres();if(tracking)showStatus(tracking)};
+JM.on(refresh);setInterval(refresh,4000);
+drawCal();myres();
+})();
+</script>
+</body>
+</html>
